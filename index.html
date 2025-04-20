@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Basic Calculator by Pharrell K</h1>
+    <div class="container">
+    <div class="display">321</div>
+    <div class="calculator">
+    <button class="digit" onclick="appendDigit('7')">7</button>
+    <button class="digit" onclick="appendDigit('8')">8</button> 
+    <button class="digit" onclick="appendDigit('9')">9</button>
+    <button onclick="appendOperator('/')">÷</button>
+
+    <button class="digit" onclick="appendDigit('4')">4</button>
+    <button class="digit" onclick="appendDigit('5')">5</button>
+    <button class="digit" onclick="appendDigit('6')">6</button>
+    <button onclick="appendOperator('*')">×</button>
+
+    <button class="digit" onclick="appendDigit('1')">1</button>
+    <button class="digit" onclick="appendDigit('2')">4</button>
+    <button class="digit" onclick="appendDigit('3')">4</button>
+    <button onclick="appendOperator('-')">−</button>
+
+    <button onclick="appendDigit('0')">0</button>
+    <button onclick="appendDecimal()">.</button>
+    <button onclick="calculate()">=</button>
+    <button onclick="appendOperator('+')">+</button>
+
+    <button class="clearDisplay" onclick="clearDisplay()" style="width: 100%">C</button>
+    </div>
+</div>
+</body>
+<script href="script.js"></script>
+</html>
