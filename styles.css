@@ -66,3 +66,14 @@ button.backspace {
 button.operator{
     background-color: orange;
 }
+
+footer{
+    background-color: black;
+    color: white;
+    padding:30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20vh;
+}
