@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 h1 {
     display: flex;
     justify-content: center;
@@ -14,12 +15,25 @@ button {
     width: 75px;
     height: 75px;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 
-button .clearDisplay{
-    width:300px;
+button:active {
+    background-color: #ddd;
 }
 
+button.clearDisplay {
+    grid-column: span 4; 
+}
+
+button.backspace {
+    grid-column: span 4; 
+}
 
 .container {
     display: flex;
@@ -40,8 +54,15 @@ button .clearDisplay{
 
 .calculator {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns*/
     width: 300px;
 }
 
+.calculator button {
+    width: 100%; 
+}
+
+
+button.operator{
+    background-color: orange;
+}
